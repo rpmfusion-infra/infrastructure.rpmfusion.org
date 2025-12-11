@@ -22,3 +22,4 @@ Ready to work with the RPM Fusion Infrastructure team? We're looking for smart, 
 
 ## SOP
 [Create SCM](CreateSCM.md)
+[Release Process](Release.md)
