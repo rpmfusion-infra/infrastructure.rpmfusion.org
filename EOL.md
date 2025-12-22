@@ -12,7 +12,7 @@ __Bugzilla Side:__
 * Disable the version to be selected for component
 
 
-__Infra side__
+__Infra side:__
 
 * Last push with only safe, non-breaking changes.
 
