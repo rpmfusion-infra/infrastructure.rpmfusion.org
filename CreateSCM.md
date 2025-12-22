@@ -25,10 +25,6 @@ ssh -A _username_@pkgs.rpmfusion.org
 sudo /usr/local/bin/genacls.sh
 ```
 
-*  Add package to bugzilla (needs bugzilla admin rights).
-
-TODO: have a script.
-
 * Add package to github (admin task)
 
 Both scripts need to be run on pkgs01, the first will update the list of module and create new-free, new-nonfree, new-cuda files when new packages
@@ -46,3 +42,9 @@ gh repo create -d "obs-studio-plugin-distroav - nonfree" --homepage http://rpmfu
 ✓ Created repository rpmfusion/obs-studio-plugin-distroav on github.com
   https://github.com/rpmfusion/obs-studio-plugin-distroav
 ```
+
+*  Add package to bugzilla (needs bugzilla admin rights).
+
+TODO: have a script.
+
+Final: close the review ticket.
