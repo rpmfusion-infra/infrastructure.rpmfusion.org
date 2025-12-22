@@ -1,11 +1,12 @@
 # Create SCM package
 
+This page explains how to create a new package within the RPM Fusion infra. This is restricted to users in the 'sysadmin-scm' group.
 
 * Create the packagename using web ui (maintainer task)
 
 [Create a new package in pkgdb](https://admin.rpmfusion.org/pkgdb/new/package/)
 
-* Verify to use the correct namespace (free, nonfree) (admin task)
+* Verify to use the correct namespace (free, nonfree, cuda) (admin task)
 
 *  Process new package (admin task)
 
