@@ -27,6 +27,7 @@ Joining the Infrastructure group is easy.
 ## Synopsis for landing or updating services:
 If you can help to create a new service or update an existing service for the RPM Fusion project.
 * Get familar the Fedora project process if any [Fedora Infra Docs](https://docs.fedoraproject.org/en-US/infra/)
+* Research for existing infrastructure request in our [bugzilla](https://bugzilla.rpmfusion.org/buglist.cgi?bug_status=__open__&list_id=25328&order=Importance&product=Infrastructure&query_format=specific) and engage discussions.
 * Adapt the deployment role from the [Fedora Ansible](https://infrastructure.fedoraproject.org/infra/ansible.git/) to [RPM Fusion Ansible](https://github.com/rpmfusion-infra/ansible-rpmfusion/), or create a new role.
 * Create a local self instance with non-relevant roles commented-out.
 * At some point, you can ask for a test VM so everything can be wired as appropriate.
