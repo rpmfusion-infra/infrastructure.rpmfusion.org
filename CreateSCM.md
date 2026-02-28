@@ -116,6 +116,36 @@ in limit list and update all packages
  for d in /srv/git/repositories/nonfree/*/; do cd "$d" || continue; echo "$PWD" > /run/rpmfusion-github-mirror;   cd ..; done
 ```
 
+*  Delete weird packages
+
+We should delete [https://koji.rpmfusion.org/koji/packageinfo?packageID=665| package 665] , because name have an tab at the end 
+'palcom-wwan-fcc-unlock\t' package https://koji.rpmfusion.org/koji/packageinfo?packageID=666 is the correct one
+
+List the packages have an space or whitespace in the name 
+
+```
+all_pkgs = session.listPackages(inherited=False)
+weird = [p for p in all_pkgs if p['package_name'] != p['package_name'].strip()]
+for p in weird:
+    print(p['package_id'], repr(p['package_name'])) # repr() shows hidden whitespace
+
+result is: 665 'palcom-wwan-fcc-unlock\t'
+
+```
+Delete a package from koji, there is no deletePackage() method in the Koji API.
+
+The only way is direct access to the PostgreSQL database:
+
+```
+psql -U koji koji
+DELETE FROM package WHERE id = <package_id>;
+
+is this case: 
+DELETE FROM package WHERE id = 665;
+```
+
+
+
 *  Add package to bugzilla (needs bugzilla admin rights).
 
 TODO: have a script.
