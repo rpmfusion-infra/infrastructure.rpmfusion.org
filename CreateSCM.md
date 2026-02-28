@@ -101,6 +101,21 @@ gh repo create -d "obs-studio-plugin-distroav - nonfree" --homepage http://rpmfu
   https://github.com/rpmfusion/obs-studio-plugin-distroav
 ```
 
+If we want update one package on github , for example openhantek
+
+```
+cd /srv/git/repositories/nonfree/openhantek.git/;  echo "$PWD" > /run/rpmfusion-github-mirror
+```
+
+in limit list and update all packages
+
+```
+ for d in /srv/git/repositories/free/*/; do cd "$d" || continue; echo "$PWD";   cd ..; done
+ for d in /srv/git/repositories/nonfree/*/; do cd "$d" || continue; echo "$PWD";   cd ..; done
+ for d in /srv/git/repositories/free/*/; do cd "$d" || continue; echo "$PWD" > /run/rpmfusion-github-mirror;   cd ..; done
+ for d in /srv/git/repositories/nonfree/*/; do cd "$d" || continue; echo "$PWD" > /run/rpmfusion-github-mirror;   cd ..; done
+```
+
 *  Add package to bugzilla (needs bugzilla admin rights).
 
 TODO: have a script.
