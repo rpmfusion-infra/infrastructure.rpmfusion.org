@@ -1,5 +1,7 @@
 # Push Packages
+
 This describes the methods to sign and publish packages into the primary mirror that will later propagate to others mirrors.
+
 There are few importants points: 
 * Packages in candidate will be moved to testing
 * Packages in testing will be moved to updates
@@ -24,6 +26,8 @@ There are few importants points:
 ## Push the repositories
 
 * Push packages from download0 to download1 primary mirror with theses scripts
+
+Each of theses scripts push a whole section of the repositories (inclusing steam, nvidia, tainted when relevant).
 ```
 ssh pkgs.rpmfusion.org -A
 rpmfusion_free_fedora_push
