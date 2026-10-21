@@ -20,6 +20,19 @@ body {
     padding: 20px;
     position: fixed;
     height: 100%;
+    overflow-y: auto; /* Enable scrolling if content exceeds viewport height */
+}
+
+.sidebar-logo {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sidebar-logo img {
+    max-width: 64px;
+    height: auto;
+    border-radius: 4px; /* Optional: adds rounded corners */
+}
 }
 
 .sidebar h3 {
