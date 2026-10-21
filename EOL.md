@@ -1,3 +1,8 @@
+---
+layout: default
+title: EOL
+---
+
 # EOL release
 
 This document present the action taken when a release is "End Of Life".

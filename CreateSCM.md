@@ -1,3 +1,8 @@
+---
+layout: default
+title: Getting Started
+---
+
 # Create SCM package
 
 This page explains how to create a new package within the RPM Fusion infra. This is restricted to users in the 'sysadmin-scm' group.

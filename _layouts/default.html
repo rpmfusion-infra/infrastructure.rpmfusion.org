@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="/assets/styles.css">
+
+  <!-- Favicon (optionnel) -->
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <!-- Barre latérale -->
+    <aside class="sidebar">
+      {% include sidebar.html %}
+    </aside>
+
+    <!-- Contenu principal -->
+    <main class="content">
+      {{ content }}
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+      {% include footer.html %}
+    </footer>
+  </div>
+</body>
+</html>

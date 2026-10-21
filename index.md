@@ -1,3 +1,9 @@
+---
+layout: default
+title: Home
+description: Welcome to the official RPM Fusion Infrastructure documentation.
+---
+
 # infrastructure.rpmfusion.org
 RPM Fusion infra public wiki
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: PushPackages
+---
+
 # Push Packages
 
 This describes the methods to sign and publish packages into the primary mirror that will later propagate to others mirrors.

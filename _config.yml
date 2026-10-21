@@ -1,0 +1,28 @@
+# Jekyll configuration
+
+# Theme
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Parameters
+title: RPM Fusion Infrastructure
+description: >-
+  Official documentation for RPM Fusion Infrastructure.
+  Learn how to contribute, package, and deploy RPM Fusion packages.
+baseurl: ""
+url: "https://infrastructure.rpmfusion.org" # URL du site
+
+# Extensions
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Excludes
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE

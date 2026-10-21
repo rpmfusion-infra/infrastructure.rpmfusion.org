@@ -1,3 +1,8 @@
+---
+layout: default
+title: ReleaseProcess
+---
+
 # Release Process
 
 ## Prepare

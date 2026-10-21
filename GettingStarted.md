@@ -1,3 +1,8 @@
+---
+layout: default
+title: GettingStarted
+---
+
 # Getting Started into RPM Fusion administration
 
 ## There are two areas related to RPM Fusion administration:

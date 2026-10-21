@@ -1,3 +1,8 @@
+---
+layout: default
+title: Override
+---
+
 # Add packages into the override repository
 
 * First drop a line about which package you are about to land into IRC '#rpmfusion-admin' and why.
