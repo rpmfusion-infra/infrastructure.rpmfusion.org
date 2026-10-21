@@ -49,7 +49,8 @@ body {
 .content {
     flex: 1;
     padding: 20px;
-    margin-left: 250px;
+    margin-left: 290px; /* Increased to prevent overlap with the fixed sidebar */
+    width: calc(100% - 290px); /* Adjust content width to avoid overlap */
 }
 
 .content h1, .content h2, .content h3 {
