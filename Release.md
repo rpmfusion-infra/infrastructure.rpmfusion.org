@@ -39,3 +39,24 @@ title: ReleaseProcess
 
 * Update the koji external repos tag to point to fedora releases
 
+## Post GA
+* Update wiki:
+ *  Update the frontpage Wiki.
+ *  Update Configuration Wiki page.
+ *  Update Keys Wiki page. (Reference the new gpg keys in the wiki.) 
+* Update mock-rpmfusion (the mock configurations fo rpmfusion).
+* Check if rfpkg is working (python version compatibility, etc)
+* Check if mirrors are updated i.e if mirrormanager was updated by Adrian. 
+  This script can help out https://github.com/sergiomb2/rpmfusion_check/blob/master/check_mirrors.sh
+* check if CommonBugs - RPM Fusion needs updates
+* update bugzilla component version
+* Prepare a "RPM Fusion is ready for F X" announcement mail 
+
+## Post RPMFusion branched
+* update wiki:
+ * Update the frontpage Wiki.
+ * Update Configuration Wiki page.
+ * Update Keys Wiki page. (Reference the new gpg keys in the wiki.) 
+* Update mock-rpmfusion (the mock configurations fo rpmfusion).
+* Check if mirrors are updated i.e. if mirrormanager doesn't miss last stable branch
+
